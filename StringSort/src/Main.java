@@ -1,7 +1,4 @@
 import java.util.Scanner;
-
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
         String[] words = new String[3];
@@ -31,9 +28,10 @@ public class Main {
         for(int i = 0; i < words.length - 1; ++i){
             for (int j = 0; j < words.length - 1; ++j) {
                 if (words[j].compareTo(words[j + 1]) > 0) {
-                    temp = words[j];
-                    words[j] = words[j + 1];
-                    words[j + 1] = temp;
+                    //This is the comparison algorithm
+                    temp = words[j]; //The empty string is equal to The words[variableLoopCounter]
+                    words[j] = words[j + 1]; //While words[variableLoopCounter] is empty the words[variableLoopCounter + 1] will be equivalent to it
+                    words[j + 1] = temp; // Now the temporary variable will be equivalent to words[variableLoopCounter + 1
                 }
             }
         }
